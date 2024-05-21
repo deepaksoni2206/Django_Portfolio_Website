@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+        <img src="{% static 'core/images/officeworkeri.jpg' %}" 
+             alt="Deepak Soni - Web Developer" 
+             class="img-thumbnail rounded-circle" 
+             width="300px" 
+             height="300px"
+             style="object-fit: cover;" /* Optional for responsive resizing */
+        >
+      </div>
+      
+    <div class="col-md-6">
+      <h1 class="display-4 font-weight-bold mb-4">Hello,</h1>
+      <p class="lead">
+        <b>I'm Deepak Soni,</b> a passionate web developer with a strong foundation in Python, Django, and front-end technologies.
+      </p>
+      <p>
+        Currently, I'm pursuing my Master's in Computer Applications (MCA) at RGPV, following the completion of my BCA from MCU. My desire to create interactive and user-friendly experiences led me to web development. I've actively broadened my skillset by completing a Python and Django course at Nareshit, Hyderabad.
+      </p>
+      <p>I'm proficient in HTML, CSS, JavaScript, Bootstrap, along with core programming languages like C and Java.</p>
+      <h2 class="h3 mt-5">My Skills</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Python</li>
+        <li class="list-group-item">Django</li>
+        <li class="list-group-item">HTML, CSS, JavaScript</li>
+        <li class="list-group-item">Bootstrap</li>
+        <li class="list-group-item">C & Java</li>
+      </ul>
+      <h2 class="h3 mt-5">My Projects</h2>
+      <div class="card mb-3">
+        <div class="card-header">Productivity Pulse</div>
+        <div class="card-body">
+          <p class="card-text">A website that helps users improve their productivity, health, and well-being through meditation, fitness, and motivation. Designed and developed a responsive and user-friendly website.</p>
+          <p class="card-text font-italic">Built with HTML, CSS, JavaScript, and Bootstrap.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Dynamic Resume/Portfolio (Python & Django)</div>
+        <div class="card-body">
+          <p class="card-text">This project highlights my back-end development skills by creating a dynamic and interactive platform to showcase my work.</p>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="{% url 'contact' %}" class="btn btn-warning px-4 mr-3">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-info px-4">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

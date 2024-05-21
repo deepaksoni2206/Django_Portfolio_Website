@@ -1,0 +1,14 @@
+{% load static %}
+<div class=" highlight border-right border-secondary h-100 ">
+  <div class="text-center">
+    <img src="{% static 'core/images/portfolioim1.png' %}" alt="profile pic" class="image-fluid rounded-circle mt-5" width="100px" height="100px" />
+    <h3 class="mt-3 text-white .headingt">Deepak Soni</h3>
+  </div>
+  <hr class="border-secondary" />
+  <nav class="nav flex-column text-center">
+    <a href="{% url 'home' %}" class="nav-link">Home</a>
+    <a href="{% url 'services' %}" class="nav-link">Services</a>
+    <a href="{% url 'skill' %}" class="nav-link">Skill</a>
+    <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+  </nav>
+</div>
